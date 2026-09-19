@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWINSTAR AIR TRANSPORT TRAINING ACADEMY LTD | RC NO: 201894</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        twinstarBlue: {
+                            800: '#101B61',
+                            900: '#0B1348',
+                            950: '#060B2C',
+                        },
+                        twinstarRed: {
+                            500: '#DC2626',
+                            600: '#B91C1C',
+                            700: '#991B1B',
+                        },
+                        twinstarGold: {
+                            400: '#FACC15',
+                            500: '#EAB308',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(11, 19, 72, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-b: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(16, 27, 97, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card-light {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060B2C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #DC2626;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-twinstarBlue-950 text-slate-100 font-sans selection:bg-twinstarRed-600 selection:text-white">
+
+    <div class="bg-twinstarRed-600 text-white text-xs font-semibold py-2 px-4 border-b border-red-500/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="bg-white/20 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider">IATA Partner</span>
+                <span>Now Accepting Admissions for Kano & Kaduna Campuses</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:08032401594" class="hover:underline flex items-center gap-1"><i class="fa-solid fa-phone text-[10px]"></i> Kano: 08032401594</a>
+                <span class="hidden sm:inline">|</span>
+                <a href="tel:08069661300" class="hover:underline flex items-center gap-1"><i class="fa-solid fa-phone text-[10px]"></i> Kaduna: 08069661300</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Exact Replicated Vector Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-14 h-14 flex items-center justify-center transition-transform group-hover:scale-105">
+                    <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-md">
+                        <!-- Top Red Jet Airplane Silhouette -->
+                        <path d="M 100 10 L 105 25 L 135 38 L 135 44 L 107 38 L 105 52 L 115 58 L 115 62 L 100 58 L 85 62 L 85 58 L 95 52 L 93 38 L 65 44 L 65 38 L 95 25 Z" fill="#DC2626" />
+                        <ellipse cx="70" cy="42" rx="4" ry="2" fill="#DC2626" />
+                        <ellipse cx="130" cy="42" rx="4" ry="2" fill="#DC2626" />
+                        
+                        <!-- Hexagon Blue Border -->
+                        <polygon points="100,50 175,90 175,170 100,200 25,170 25,90" fill="none" stroke="#101B61" stroke-width="12" />
+                        <polygon points="100,58 167,94 167,164 100,192 33,164 33,94" fill="#0B1348" />
+                        
+                        <!-- Twin Stars in Center (Red Primary, Blue Shadow) -->
+                        <polygon points="108,82 114,98 132,98 118,108 123,124 108,114 93,124 98,108 84,98 102,98" fill="#101B61" transform="translate(4,4)" />
+                        <polygon points="100,75 107,93 126,93 111,104 116,122 100,111 84,122 89,104 74,93 93,93" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" />
+                        
+                        <!-- Dark Badge Strip -->
+                        <rect x="10" y="115" width="180" height="32" rx="4" fill="#060B2C" stroke="#FFFFFF" stroke-width="2" />
+                        <text x="100" y="127" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="7" font-weight="bold">TWINSTAR AIR TRANSPORT</text>
+                        <text x="100" y="138" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="7" font-weight="bold">TRAINING ACADEMY LTD</text>
+                        
+                        <!-- RC NO inside Hexagon base -->
+                        <text x="100" y="162" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="9" font-weight="bold">RC NO: 201894</text>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-base sm:text-lg text-white block leading-none">TWINSTAR</span>
+                    <span class="text-[10px] sm:text-xs text-twinstarGold-400 uppercase font-bold tracking-widest block">Air Transport Training Academy</span>
+                    <span class="text-[9px] text-slate-300 italic">RC NO: 201894</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-twinstarGold-400 transition-colors">About Academy</a>
+                <a href="#courses" class="text-slate-300 hover:text-twinstarGold-400 transition-colors">Range of Courses</a>
+                <a href="#estimator" class="text-slate-300 hover:text-twinstarGold-400 transition-colors">Course Estimator</a>
+                <a href="#campuses" class="text-slate-300 hover:text-twinstarGold-400 transition-colors">Campuses & Contacts</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="hidden md:flex items-center space-x-3">
+                <button onclick="openModal('admissionModal')" class="px-5 py-2.5 rounded-xl font-bold text-white bg-gradient-to-r from-twinstarRed-600 to-twinstarRed-700 hover:from-twinstarRed-500 hover:to-twinstarRed-600 shadow-lg shadow-twinstarRed-600/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Apply Online</span>
+                </button>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Navigation Container -->
+        <div id="mobileMenu" class="hidden md:hidden glass-header border-t border-white/10 px-4 pt-3 pb-6 space-y-3">
+            <a href="#about" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-white/5 hover:text-twinstarGold-400">About Academy</a>
+            <a href="#courses" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-white/5 hover:text-twinstarGold-400">Range of Courses</a>
+            <a href="#estimator" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-white/5 hover:text-twinstarGold-400">Course Estimator</a>
+            <a href="#campuses" class="block px-3 py-2 rounded-lg text-slate-200 hover:bg-white/5 hover:text-twinstarGold-400">Campuses & Contacts</a>
+            <button onclick="openModal('admissionModal')" class="w-full mt-2 px-5 py-3 rounded-xl font-bold text-white bg-twinstarRed-600 text-center">
+                Apply Online Now
+            </button>
+        </div>
+    </header>
+
+    <section class="relative min-h-[85vh] pt-12 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Radial Grid & Blue Lighting -->
+        <div class="absolute inset-0 bg-[radial-gradient(#101b61_1px,transparent_1px)] [background-size:28px_28px] opacity-40"></div>
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-twinstarBlue-800/40 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-twinstarRed-600/20 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Official IATA Accredited Banner Tag -->
+            <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full glass-card-light text-white text-xs sm:text-sm font-semibold mb-8 border border-white/20 shadow-xl">
+                <span class="w-7 h-7 rounded-full bg-white text-twinstarBlue-900 flex items-center justify-center font-bold text-xs">IATA</span>
+                <span>IATA & Air Transport Training Partner</span>
+                <span class="bg-twinstarRed-600 px-2 py-0.5 rounded text-[10px] text-white uppercase font-bold">RC: 201894</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                TWINSTAR AIR TRANSPORT <br class="hidden sm:inline" />
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-twinstarGold-400 to-amber-300">TRAINING ACADEMY LTD</span>
+            </h1>
+
+            <!-- Mottos Subtitle -->
+            <div class="max-w-3xl mx-auto mb-10 space-y-2">
+                <p class="text-xl sm:text-2xl text-twinstarGold-400 font-bold italic tracking-wide">
+                    "AViation is Everything"
+                </p>
+                <p class="text-base sm:text-lg text-slate-300 font-medium uppercase tracking-widest text-slate-300">
+                    Motto: Committing To Earning Your Trust
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="#courses" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-twinstarRed-600 to-twinstarRed-700 hover:from-twinstarRed-500 hover:to-twinstarRed-600 shadow-xl shadow-twinstarRed-600/30 transition-all transform hover:-translate-y-1">
+                    Explore Range of Courses
+                </a>
+                <button onclick="openModal('admissionModal')" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white glass-card hover:bg-white/10 border border-white/20 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-signature text-twinstarGold-400"></i>
+                    <span>Apply For Admission</span>
+                </button>
+            </div>
+
+            <!-- Quick Info Bar (IATA, Amadeus, Galileo, BSP Link) -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                <div class="glass-card p-4 rounded-2xl border border-white/10 text-left flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-twinstarRed-600/20 text-twinstarRed-500 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-passport"></i>
+                    </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 uppercase font-semibold">Certification</div>
+                        <div class="text-sm font-bold text-white">IATA Foundation</div>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-white/10 text-left flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-twinstarGold-500/20 text-twinstarGold-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 uppercase font-semibold">GDS Systems</div>
+                        <div class="text-sm font-bold text-white">Amadeus & Galileo</div>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-white/10 text-left flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 uppercase font-semibold">Airline Finance</div>
+                        <div class="text-sm font-bold text-white">BSP Link Operations</div>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border border-white/10 text-left flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 uppercase font-semibold">Dual Campuses</div>
+                        <div class="text-sm font-bold text-white">Kano & Kaduna</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-20 relative bg-twinstarBlue-900 border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Visual with Badge -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Aviation Student Training" class="w-full h-96 object-cover" onerror="this.src='https://placehold.co/800x600/0B1348/FFFFFF?text=IATA+Aviation+Academy'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-twinstarBlue-950/90 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-2xl border border-white/20">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-white text-twinstarBlue-900 font-extrabold text-xl flex items-center justify-center">
+                                    IATA
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm">International Standard Training</h4>
+                                    <p class="text-slate-300 text-xs">Accredited Aviation & Travel Curriculum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Description -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 text-twinstarRed-500 font-bold text-sm uppercase tracking-widest mb-3">
+                        <i class="fa-solid fa-plane-tail"></i> About Twinstar Academy
+                    </div>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">
+                        Pioneering Excellence in Aviation, Travel & Tourism Training
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6 text-sm sm:text-base">
+                        <strong class="text-white">TWINSTAR AIR TRANSPORT TRAINING ACADEMY LTD</strong> (RC NO: 201894) is a premier aviation institute in Nigeria dedicated to producing world-class travel agency practitioners, flight booking specialists, and travel consultants.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-8 text-sm sm:text-base">
+                        Equipped with practical Global Distribution Systems (GDS) computer labs in both our Kano Head Office and Kaduna Branch, we equip students with hands-on expertise in <span class="text-twinstarGold-400 font-semibold">Amadeus, Galileo, and BSP Link Operations</span>.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl glass-card border border-white/10">
+                            <div class="text-twinstarGold-400 font-bold text-base mb-1">
+                                <i class="fa-solid fa-bullseye text-twinstarRed-500 mr-2"></i> Our Core Mission
+                            </div>
+                            <p class="text-slate-300 text-xs leading-relaxed">
+                                Committing to earning your trust by providing top-tier, industry-approved travel and transport education.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-2xl glass-card border border-white/10">
+                            <div class="text-twinstarGold-400 font-bold text-base mb-1">
+                                <i class="fa-solid fa-award text-twinstarRed-500 mr-2"></i> Career Readiness
+                            </div>
+                            <p class="text-slate-300 text-xs leading-relaxed">
+                                Direct career placement support in airline offices, travel management companies, and tour agencies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-twinstarRed-500 text-sm uppercase tracking-widest font-bold mb-2 block">Extracted Program Catalog</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-white">Range Of Accredited Courses</h2>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Master Global Distribution Systems (GDS), airline ticketing, passenger reservations, and tour operations with certified instructors.</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12" id="courseTabs">
+                <button onclick="filterCourses('all')" class="tab-btn active px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-twinstarRed-600 text-white border-twinstarRed-600 shadow-md">All Programs</button>
+                <button onclick="filterCourses('gds')" class="tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all text-slate-300 border-white/10 hover:border-twinstarRed-500">GDS & Reservations</button>
+                <button onclick="filterCourses('iata')" class="tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all text-slate-300 border-white/10 hover:border-twinstarRed-500">IATA Diploma</button>
+                <button onclick="filterCourses('tourism')" class="tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all text-slate-300 border-white/10 hover:border-twinstarRed-500">Tour & Agency Ops</button>
+            </div>
+
+            <!-- Interactive Course Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="coursesGrid">
+                
+                <!-- Course 1 -->
+                <div class="course-card glass-card rounded-3xl overflow-hidden border border-white/10 hover:border-twinstarRed-500 transition-all duration-300 hover:-translate-y-2 group" data-category="gds">
+                    <div class="h-48 relative overflow-hidden bg-twinstarBlue-900">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="GDS Booking" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/0B1348/FFFFFF?text=GDS+Amadeus+Galileo'">
+                        <div class="absolute top-4 right-4 bg-twinstarRed-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                            Amadeus or Galileo
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-twinstarGold-400 font-semibold block mb-1">CERTIFICATE COURSE</span>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">GDS, Booking & Reservations Course</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                            Comprehensive hands-on training on global distribution systems. Choose between Amadeus or Galileo platforms for airline passenger booking and itinerary creation.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                            <div>
+                                <span class="text-[10px] text-slate-400 block uppercase">Duration</span>
+                                <span class="text-xs font-bold text-white">8 Weeks Practical</span>
+                            </div>
+                            <button onclick="openCourseDetails('gds')" class="text-twinstarGold-400 text-xs font-bold hover:underline flex items-center gap-1">
+                                Details & Syllabus <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card glass-card rounded-3xl overflow-hidden border border-white/10 hover:border-twinstarRed-500 transition-all duration-300 hover:-translate-y-2 group" data-category="gds">
+                    <div class="h-48 relative overflow-hidden bg-twinstarBlue-900">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="BSP Link Operations" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/0B1348/FFFFFF?text=BSP+Link+Operations'">
+                        <div class="absolute top-4 right-4 bg-twinstarBlue-800 text-twinstarGold-400 px-3 py-1 rounded-full text-xs font-bold border border-twinstarGold-400/30">
+                            IATA Billing System
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-twinstarGold-400 font-semibold block mb-1">CERTIFICATE COURSE</span>
+                        <h3 class="font-heading text-1xl font-bold text-white mb-3">BSP Link Operations</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                            Master IATA's Billing and Settlement Plan (BSP Link). Learn electronic ticketing, refund handling, credit memos, and financial reconciliation for travel agencies.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                            <div>
+                                <span class="text-[10px] text-slate-400 block uppercase">Duration</span>
+                                <span class="text-xs font-bold text-white">4 Weeks Intensive</span>
+                            </div>
+                            <button onclick="openCourseDetails('bsp')" class="text-twinstarGold-400 text-xs font-bold hover:underline flex items-center gap-1">
+                                Details & Syllabus <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card glass-card rounded-3xl overflow-hidden border border-white/10 hover:border-twinstarRed-500 transition-all duration-300 hover:-translate-y-2 group" data-category="iata">
+                    <div class="h-48 relative overflow-hidden bg-twinstarBlue-900">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="IATA Foundation Diploma" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/0B1348/FFFFFF?text=IATA+Foundation+Diploma'">
+                        <div class="absolute top-4 right-4 bg-twinstarRed-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                            Global Certification
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-twinstarGold-400 font-semibold block mb-1">FLAGSHIP DIPLOMA</span>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">IATA Foundation Diploma</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                            The internationally recognized qualification for flight sales, fare construction, flight geography, travel documents, and global travel agency management.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                            <div>
+                                <span class="text-[10px] text-slate-400 block uppercase">Duration</span>
+                                <span class="text-xs font-bold text-white">3 to 6 Months</span>
+                            </div>
+                            <button onclick="openCourseDetails('iata')" class="text-twinstarGold-400 text-xs font-bold hover:underline flex items-center gap-1">
+                                Details & Syllabus <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card glass-card rounded-3xl overflow-hidden border border-white/10 hover:border-twinstarRed-500 transition-all duration-300 hover:-translate-y-2 group" data-category="tourism">
+                    <div class="h-48 relative overflow-hidden bg-twinstarBlue-900">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Tour Management" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/0B1348/FFFFFF?text=Tour+and+Tourist+Management'">
+                        <div class="absolute top-4 right-4 bg-twinstarBlue-800 text-twinstarGold-400 px-3 py-1 rounded-full text-xs font-bold border border-twinstarGold-400/30">
+                            Umrah, Hajj & Global Tours
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-twinstarGold-400 font-semibold block mb-1">CERTIFICATE COURSE</span>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">Tour and Tourist Management</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                            Learn tour packaging, itinerary design, hotel contracts, visa assistance, and specialized pilgrimage travel management (Hajj/Umrah, Dubai, Europe).
+                        </p>
+                        <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                            <div>
+                                <span class="text-[10px] text-slate-400 block uppercase">Duration</span>
+                                <span class="text-xs font-bold text-white">6 Weeks Practical</span>
+                            </div>
+                            <button onclick="openCourseDetails('tour')" class="text-twinstarGold-400 text-xs font-bold hover:underline flex items-center gap-1">
+                                Details & Syllabus <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card glass-card rounded-3xl overflow-hidden border border-white/10 hover:border-twinstarRed-500 transition-all duration-300 hover:-translate-y-2 group" data-category="tourism">
+                    <div class="h-48 relative overflow-hidden bg-twinstarBlue-900">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Travel Agency Operation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/800x600/0B1348/FFFFFF?text=Travel+Agency+Operation'">
+                        <div class="absolute top-4 right-4 bg-twinstarRed-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                            Agency Setup & Management
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-twinstarGold-400 font-semibold block mb-1">CERTIFICATE COURSE</span>
+                        <h3 class="font-heading text-xl font-bold text-white mb-3">Travel Agency Operation</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                            Designed for aspiring travel entrepreneurs and agency managers. Covers agency setup, licensing, customer service, and corporate client flight accounts.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                            <div>
+                                <span class="text-[10px] text-slate-400 block uppercase">Duration</span>
+                                <span class="text-xs font-bold text-white">6 Weeks Comprehensive</span>
+                            </div>
+                            <button onclick="openCourseDetails('agency')" class="text-twinstarGold-400 text-xs font-bold hover:underline flex items-center gap-1">
+                                Details & Syllabus <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="estimator" class="py-20 bg-twinstarBlue-900 border-y border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5">
+                    <span class="text-twinstarRed-500 text-xs font-bold uppercase tracking-widest block mb-2">Flexible Learning</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">Interactive Course Schedule & Estimator</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        Select your preferred course program and campus location (Kano Head Office or Kaduna Branch Office) to calculate class schedules and estimated duration.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 text-slate-300 text-xs sm:text-sm">
+                            <div class="w-6 h-6 rounded-full bg-twinstarRed-600/30 text-twinstarRed-500 flex items-center justify-center font-bold text-xs mt-0.5">✓</div>
+                            <span>Morning, Afternoon, and Weekend Executive Batches Available.</span>
+                        </div>
+                        <div class="flex items-start gap-3 text-slate-300 text-xs sm:text-sm">
+                            <div class="w-6 h-6 rounded-full bg-twinstarRed-600/30 text-twinstarRed-500 flex items-center justify-center font-bold text-xs mt-0.5">✓</div>
+                            <span>Direct GDS System Login Credentials Provided to Every Student.</span>
+                        </div>
+                        <div class="flex items-start gap-3 text-slate-300 text-xs sm:text-sm">
+                            <div class="w-6 h-6 rounded-full bg-twinstarRed-600/30 text-twinstarRed-500 flex items-center justify-center font-bold text-xs mt-0.5">✓</div>
+                            <span>Installment Fee Payment Structure for Approved Applicants.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estimator Widget Form -->
+                <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl">
+                    <h3 class="text-white font-bold text-xl mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-twinstarGold-400"></i> Course Planning Tool
+                    </h3>
+
+                    <form id="estimatorForm" onsubmit="event.preventDefault();" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-2">1. Select Course</label>
+                                <select id="estCourse" onchange="updateEstimator()" class="w-full bg-twinstarBlue-950 border border-white/20 rounded-xl p-3 text-white text-xs sm:text-sm focus:outline-none focus:border-twinstarRed-500">
+                                    <option value="gds">GDS Booking & Reservations (Amadeus/Galileo)</option>
+                                    <option value="bsp">BSP Link Operations</option>
+                                    <option value="iata">IATA Foundation Diploma</option>
+                                    <option value="tour">Tour and Tourist Management</option>
+                                    <option value="agency">Travel Agency Operation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-2">2. Campus Location</label>
+                                <select id="estCampus" onchange="updateEstimator()" class="w-full bg-twinstarBlue-950 border border-white/20 rounded-xl p-3 text-white text-xs sm:text-sm focus:outline-none focus:border-twinstarRed-500">
+                                    <option value="kano">Kano Head Office (Zungeru Rd)</option>
+                                    <option value="kaduna">Kaduna Branch (Al-Amin Plaza)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">3. Preferred Study Option</label>
+                            <select id="estShift" onchange="updateEstimator()" class="w-full bg-twinstarBlue-950 border border-white/20 rounded-xl p-3 text-white text-xs sm:text-sm focus:outline-none focus:border-twinstarRed-500">
+                                <option value="weekday">Weekday Regular (Mon - Thu)</option>
+                                <option value="weekend">Weekend Executive (Fri & Sat)</option>
+                            </select>
+                        </div>
+
+                        <!-- Result Card -->
+                        <div class="p-5 rounded-2xl bg-twinstarBlue-950/80 border border-twinstarRed-500/40 space-y-3">
+                            <div class="flex items-center justify-between text-xs sm:text-sm border-b border-white/10 pb-2">
+                                <span class="text-slate-400">Estimated Duration:</span>
+                                <span id="estDuration" class="font-bold text-twinstarGold-400">8 Weeks</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs sm:text-sm border-b border-white/10 pb-2">
+                                <span class="text-slate-400">Practical Computer Lab:</span>
+                                <span id="estLab" class="font-bold text-white">Full GDS Access</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs sm:text-sm">
+                                <span class="text-slate-400">Next Upcoming Intake:</span>
+                                <span id="estIntake" class="font-bold text-emerald-400">1st & 15th of Every Month</span>
+                            </div>
+                        </div>
+
+                        <button type="button" onclick="openModal('admissionModal')" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-twinstarRed-600 to-twinstarRed-700 hover:from-twinstarRed-500 hover:to-twinstarRed-600 shadow-lg shadow-twinstarRed-600/30 transition-all text-sm">
+                            Proceed to Register for Selected Program
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="campuses" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-twinstarRed-500 text-sm uppercase tracking-widest font-bold mb-2 block">Our Training Hubs</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-white">Head Office & Branch Directory</h2>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Visit our fully-equipped aviation computer training centers in Kano or Kaduna.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Kano Head Office Card -->
+                <div class="glass-card p-8 rounded-3xl border border-white/10 hover:border-twinstarRed-500 transition-all relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-twinstarRed-600 text-white text-[10px] font-bold uppercase px-4 py-1 rounded-bl-xl tracking-wider">
+                        HEAD OFFICE
+                    </div>
+                    
+                    <div class="w-14 h-14 rounded-2xl bg-twinstarBlue-900 border border-white/20 text-twinstarGold-400 flex items-center justify-center text-2xl mb-6 shadow-md">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <h3 class="font-heading text-2xl font-bold text-white mb-2">Kano Campus</h3>
+                    <p class="text-xs text-twinstarGold-400 font-semibold mb-6 uppercase tracking-wider">Headquarters & Main GDS Lab</p>
+
+                    <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-twinstarRed-500 mt-1 text-base"></i>
+                            <span>No. 543 Zungeru Road, By Airport Round About, Behind Nitel Training School, Kano - Nigeria</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone text-twinstarRed-500 mt-1 text-base"></i>
+                            <div class="space-y-1">
+                                <a href="tel:08032401594" class="block hover:text-twinstarGold-400">08032401594</a>
+                                <a href="tel:08020606059" class="block hover:text-twinstarGold-400">08020606059</a>
+                                <a href="tel:07054348914" class="block hover:text-twinstarGold-400">07054348914</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-twinstarRed-500 text-base"></i>
+                            <a href="mailto:twinstartravels1@gmail.com" class="hover:text-twinstarGold-400">twinstartravels1@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <a href="tel:08032401594" class="w-full py-3 rounded-xl bg-white/10 hover:bg-twinstarRed-600 text-white font-bold text-center block transition-all border border-white/10">
+                        <i class="fa-solid fa-phone-volume mr-2"></i> Call Kano Office
+                    </a>
+                </div>
+
+                <!-- Kaduna Branch Office Card -->
+                <div class="glass-card p-8 rounded-3xl border border-white/10 hover:border-twinstarRed-500 transition-all relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-twinstarBlue-800 text-twinstarGold-400 border border-twinstarGold-400/30 text-[10px] font-bold uppercase px-4 py-1 rounded-bl-xl tracking-wider">
+                        BRANCH OFFICE
+                    </div>
+
+                    <div class="w-14 h-14 rounded-2xl bg-twinstarBlue-900 border border-white/20 text-twinstarGold-400 flex items-center justify-center text-2xl mb-6 shadow-md">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                    </div>
+
+                    <h3 class="font-heading text-2xl font-bold text-white mb-2">Kaduna Campus</h3>
+                    <p class="text-xs text-twinstarGold-400 font-semibold mb-6 uppercase tracking-wider">Training & Regional Operations</p>
+
+                    <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-twinstarRed-500 mt-1 text-base"></i>
+                            <span>Suite 35 Al-Amin Plaza, Nnamdi Azikiwe Byepass, Adjacent GT Bank, Kaduna - Nigeria</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone text-twinstarRed-500 mt-1 text-base"></i>
+                            <div class="space-y-1">
+                                <a href="tel:08069661300" class="block hover:text-twinstarGold-400">08069661300</a>
+                                <a href="tel:08020606059" class="block hover:text-twinstarGold-400">08020606059</a>
+                                <a href="tel:08024342827" class="block hover:text-twinstarGold-400">08024342827</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-twinstarRed-500 text-base"></i>
+                            <a href="mailto:baihaqisharif@gmail.com" class="hover:text-twinstarGold-400">baihaqisharif@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <a href="tel:08069661300" class="w-full py-3 rounded-xl bg-white/10 hover:bg-twinstarRed-600 text-white font-bold text-center block transition-all border border-white/10">
+                        <i class="fa-solid fa-phone-volume mr-2"></i> Call Kaduna Office
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-twinstarBlue-950 border-t border-white/10 pt-16 pb-12 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-12 border-b border-white/10">
+                
+                <!-- Brand Summary -->
+                <div class="lg:col-span-5">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-twinstarRed-600 flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fa-solid fa-plane-up"></i>
+                        </div>
+                        <div>
+                            <span class="font-heading font-extrabold text-white text-base block leading-tight">TWINSTAR</span>
+                            <span class="text-[10px] text-twinstarGold-400 font-bold uppercase tracking-wider block">Air Transport Training Academy Ltd</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-twinstarGold-400 font-bold italic mb-2">"AViation is Everything"</p>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">Motto: Committing to earning your trust</p>
+                    <div class="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs text-slate-300">
+                        Official Registration: <strong class="text-white">RC NO: 201894</strong>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation -->
+                <div class="lg:col-span-3">
+                    <h4 class="text-white font-bold text-sm mb-4">Courses Offered</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#courses" class="hover:text-twinstarGold-400">GDS, Booking & Reservations (Amadeus/Galileo)</a></li>
+                        <li><a href="#courses" class="hover:text-twinstarGold-400">BSP Link Operations</a></li>
+                        <li><a href="#courses" class="hover:text-twinstarGold-400">IATA Foundation Diploma</a></li>
+                        <li><a href="#courses" class="hover:text-twinstarGold-400">Tour and Tourist Management</a></li>
+                        <li><a href="#courses" class="hover:text-twinstarGold-400">Travel Agency Operation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Emails & Hotlines -->
+                <div class="lg:col-span-4">
+                    <h4 class="text-white font-bold text-sm mb-4">Official Contact Emails</h4>
+                    <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-twinstarRed-500"></i>
+                            <span>twinstartravels1@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-twinstarRed-500"></i>
+                            <span>baihaqisharif@gmail.com</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-slate-400">
+                        Thank you for your patronage! Visit our Kano or Kaduna offices to complete enrollment.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 TWINSTAR AIR TRANSPORT TRAINING ACADEMY LTD (RC NO: 201894). All Rights Reserved.</p>
+                <div class="flex items-center space-x-4">
+                    <span>IATA Course Provider</span>
+                    <span>•</span>
+                    <a href="#campuses" class="hover:underline text-slate-300">Kano & Kaduna Campuses</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="admissionModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-twinstarBlue-950/80 backdrop-blur-md hidden">
+        <div class="glass-card max-w-lg w-full p-6 sm:p-8 rounded-3xl border border-twinstarRed-500/40 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('admissionModal')" class="absolute top-6 right-6 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div id="modalFormContainer">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-twinstarRed-600 text-white flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-white">Student Enrollment Form</h3>
+                        <p class="text-xs text-twinstarGold-400">Twinstar Air Transport Training Academy Ltd</p>
+                    </div>
+                </div>
+
+                <form onsubmit="handleAdmissionSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Full Candidate Name *</label>
+                        <input type="text" id="appFullName" required placeholder="e.g. Ibrahim Abubakar" class="w-full px-4 py-3 rounded-xl bg-twinstarBlue-950 border border-white/20 text-white text-xs focus:outline-none focus:border-twinstarRed-500">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1">Phone Number *</label>
+                            <input type="tel" id="appPhone" required placeholder="08012345678" class="w-full px-4 py-3 rounded-xl bg-twinstarBlue-950 border border-white/20 text-white text-xs focus:outline-none focus:border-twinstarRed-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1">Email Address</label>
+                            <input type="email" id="appEmail" placeholder="candidate@gmail.com" class="w-full px-4 py-3 rounded-xl bg-twinstarBlue-950 border border-white/20 text-white text-xs focus:outline-none focus:border-twinstarRed-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Select Program *</label>
+                        <select id="appCourse" required class="w-full px-4 py-3 rounded-xl bg-twinstarBlue-950 border border-white/20 text-white text-xs focus:outline-none focus:border-twinstarRed-500">
+                            <option>Certificate Course of GDS, Booking & Reservations (Amadeus or Galileo)</option>
+                            <option>Certificate Course on BSP Link Operations</option>
+                            <option>IATA Foundation Diploma</option>
+                            <option>Certificate Course in Tour and Tourist Management</option>
+                            <option>Certificate Course in Travel Agency Operation</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Preferred Campus Location *</label>
+                        <select id="appCampus" required class="w-full px-4 py-3 rounded-xl bg-twinstarBlue-950 border border-white/20 text-white text-xs focus:outline-none focus:border-twinstarRed-500">
+                            <option>Kano Head Office (Zungeru Road)</option>
+                            <option>Kaduna Branch Office (Al-Amin Plaza)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-twinstarRed-600 to-twinstarRed-700 hover:from-twinstarRed-500 hover:to-twinstarRed-600 shadow-lg shadow-twinstarRed-600/30 transition-all text-xs uppercase tracking-wider">
+                        Generate & Submit Registration Summary
+                    </button>
+                </form>
+            </div>
+
+            <!-- Receipt Summary View after submit -->
+            <div id="modalReceiptContainer" class="hidden text-center py-4">
+                <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 border border-emerald-400/30">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h4 class="text-white font-bold text-xl mb-1">Registration Generated!</h4>
+                <p class="text-xs text-slate-300 mb-6">Your registration slip has been generated for Twinstar Academy.</p>
+
+                <div class="p-4 rounded-2xl bg-twinstarBlue-950 text-left border border-white/10 text-xs space-y-2 mb-6">
+                    <div><span class="text-slate-400">Candidate:</span> <strong id="recName" class="text-white">---</strong></div>
+                    <div><span class="text-slate-400">Phone:</span> <strong id="recPhone" class="text-white">---</strong></div>
+                    <div><span class="text-slate-400">Selected Course:</span> <strong id="recCourse" class="text-twinstarGold-400">---</strong></div>
+                    <div><span class="text-slate-400">Campus:</span> <strong id="recCampus" class="text-white">---</strong></div>
+                    <div><span class="text-slate-400">Academy Reference:</span> <strong class="text-twinstarRed-500">TSA-2026-REG</strong></div>
+                </div>
+
+                <p class="text-[11px] text-slate-400 mb-6">Please report to your selected campus (Kano or Kaduna) or contact our desk to finalize fee payment and receive your manual/GDS login.</p>
+
+                <button onclick="closeModal('admissionModal')" class="w-full py-3 rounded-xl bg-twinstarRed-600 hover:bg-twinstarRed-700 text-white font-bold text-xs">
+                    Close Registration
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-twinstarBlue-950/80 backdrop-blur-md hidden">
+        <div class="glass-card max-w-xl w-full p-6 sm:p-8 rounded-3xl border border-twinstarRed-500/40 relative">
+            <button onclick="closeModal('detailsModal')" class="absolute top-6 right-6 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="detailsContent">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 glass-card px-6 py-4 rounded-2xl border border-twinstarRed-500 text-white flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300">
+        <i class="fa-solid fa-plane-circle-check text-twinstarGold-400 text-xl"></i>
+        <span id="toastMsg" class="text-xs sm:text-sm font-semibold">Action completed successfully!</span>
+    </div>
+
+    <script>
+        // Data Store for Detailed Course View
+        const courseData = {
+            gds: {
+                title: "Certificate Course of GDS, Booking & Reservations",
+                option: "Option of Amadeus or Galileo GDS",
+                duration: "8 Weeks Practical Lab",
+                summary: "This course equips candidates with practical mastery of Global Distribution Systems used by airlines and travel agencies worldwide.",
+                syllabus: [
+                    "Encoding & Decoding Cities, Airports & Airlines",
+                    "Building Passenger Name Records (PNR)",
+                    "Flight Availability Search & Seat Assignments",
+                    "Fare Quotation, Ticketing Rules & Mask Creation",
+                    "Special Service Requests (SSR) & Frequent Flyer Codes"
+                ]
+            },
+            bsp: {
+                title: "Certificate Course on BSP Link Operations",
+                option: "IATA Settlement & Financial Clearing",
+                duration: "4 Weeks Intensive",
+                summary: "Designed for agency accountants and ticketing officers to master electronic ticket auditing, refund calculations, and BSPLink web portal management.",
+                syllabus: [
+                    "Introduction to IATA Billing & Settlement Plan (BSP)",
+                    "Issuing Agency Credit Memos (ACM) & Debit Memos (ADM)",
+                    "Electronic Ticket Refunds & Void Cancellations",
+                    "BSP Sales Reports Reconciliation & Remittance"
+                ]
+            },
+            iata: {
+                title: "IATA Foundation Diploma",
+                option: "Flagship International Certification",
+                duration: "3 to 6 Months",
+                summary: "The globally respected credential for travel professionals. Qualify for international airline and travel management employment.",
+                syllabus: [
+                    "Passenger Fare Construction & Mileage Principles",
+                    "Global Flight Geography, Time Calculations & Currencies",
+                    "Travel Documents: Visas, Passports & Health Certificates",
+                    "Customer Service & Specialized Travel Products"
+                ]
+            },
+            tour: {
+                title: "Certificate Course in Tour & Tourist Management",
+                option: "Local & International Tour Operations",
+                duration: "6 Weeks Practical",
+                summary: "Learn how to assemble, price, and market domestic and international tour packages including Hajj/Umrah pilgrimages and holiday trips.",
+                syllabus: [
+                    "Tour Costing & Profit Margin Calculation",
+                    "Hotel Contracts, Ground Transfers & Excursions",
+                    "Pilgrimage Travel (Hajj & Umrah Package Setup)",
+                    "Visa Application Support & Tourist Escort Skills"
+                ]
+            },
+            agency: {
+                title: "Certificate Course in Travel Agency Operation",
+                option: "Entrepreneurship & Management",
+                duration: "6 Weeks Comprehensive",
+                summary: "Everything needed to start and run a licensed travel agency in Nigeria or work as a senior travel consultant.",
+                syllabus: [
+                    "Setting Up & Licensing a Travel Agency",
+                    "Corporate Account Management & Flight Booking",
+                    "Customer Relationship Management (CRM) in Travel",
+                    "Ethics, Commission Structures & Invoicing"
+                ]
+            }
+        };
+
+        // Course Estimator Schedule Data
+        const estimatorMatrix = {
+            gds: { duration: "8 Weeks", lab: "Daily Amadeus/Galileo Access" },
+            bsp: { duration: "4 Weeks", lab: "BSPLink Portal Practical" },
+            iata: { duration: "3 to 6 Months", lab: "IATA Study Manuals & Exam Prep" },
+            tour: { duration: "6 Weeks", lab: "Package Design Software" },
+            agency: { duration: "6 Weeks", lab: "Agency Software & Operations" }
+        };
+
+        // Course Filter Tabs
+        function filterCourses(category) {
+            const cards = document.querySelectorAll('.course-card');
+            const btns = document.querySelectorAll('#courseTabs .tab-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-twinstarRed-600', 'text-white', 'border-twinstarRed-600');
+                btn.classList.add('text-slate-300', 'border-white/10');
+            });
+            event.currentTarget.classList.add('bg-twinstarRed-600', 'text-white', 'border-twinstarRed-600');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Open Course Details Modal
+        function openCourseDetails(key) {
+            const data = courseData[key];
+            if (!data) return;
+
+            const content = document.getElementById('detailsContent');
+            content.innerHTML = `
+                <span class="text-twinstarGold-400 text-xs font-bold uppercase tracking-wider block mb-1">${data.option} • ${data.duration}</span>
+                <h3 class="font-heading text-2xl font-bold text-white mb-4">${data.title}</h3>
+                <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">${data.summary}</p>
+                <h5 class="text-white font-bold text-sm mb-3">Key Modules & Learning Outcomes:</h5>
+                <ul class="space-y-2 mb-6">
+                    ${data.syllabus.map(item => `<li class="text-xs text-slate-300 flex items-center gap-2"><i class="fa-solid fa-check text-twinstarRed-500"></i> ${item}</li>`).join('')}
+                </ul>
+                <button onclick="closeModal('detailsModal'); openModal('admissionModal');" class="w-full py-3.5 rounded-xl bg-twinstarRed-600 hover:bg-twinstarRed-700 text-white font-bold text-xs uppercase tracking-wider">
+                    Register For This Course
+                </button>
+            `;
+            openModal('detailsModal');
+        }
+
+        // Update Estimator Tool Dynamic Output
+        function updateEstimator() {
+            const courseKey = document.getElementById('estCourse').value;
+            const matrix = estimatorMatrix[courseKey];
+            if (matrix) {
+                document.getElementById('estDuration').innerText = matrix.duration;
+                document.getElementById('estLab').innerText = matrix.lab;
+            }
+        }
+
+        // Handle Admission Form Submission
+        function handleAdmissionSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('appFullName').value;
+            const phone = document.getElementById('appPhone').value;
+            const course = document.getElementById('appCourse').value;
+            const campus = document.getElementById('appCampus').value;
+
+            document.getElementById('recName').innerText = name;
+            document.getElementById('recPhone').innerText = phone;
+            document.getElementById('recCourse').innerText = course;
+            document.getElementById('recCampus').innerText = campus;
+
+            document.getElementById('modalFormContainer').classList.add('hidden');
+            document.getElementById('modalReceiptContainer').classList.remove('hidden');
+
+            showToast("Registration Generated for " + name);
+        }
+
+        // Modal Helpers
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            if (id === 'admissionModal') {
+                // Reset form views
+                document.getElementById('modalFormContainer').classList.remove('hidden');
+                document.getElementById('modalReceiptContainer').classList.add('hidden');
+            }
+        }
+
+        // Notification Toast Handler
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3500);
+        }
+
+        // Mobile Menu Navigation Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
